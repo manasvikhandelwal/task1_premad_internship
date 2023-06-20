@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="login-container">
+    <h1>Login</h1>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <p id="error-message" class="error"></p>
+      <button type="button" onclick="login()">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="openModal()">Sign up</a></p>
+  </div>
+
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="password" id="signup-password" placeholder="Password">
+        <input type="email" id="signup-email" placeholder="Email">
+        <p id="signup-error-message" class="error"></p>
+        <button type="button" onclick="signup()">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
